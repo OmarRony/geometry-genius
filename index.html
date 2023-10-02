@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genious</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header>
+
+    </header>
+    <main>
+      <!-- main container -->
+      <div class="flex flex-col lg:flex-row">
+        <!-- shape  container -->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Triangle card -->
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure><img src="/assets/triangle.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl">Triangle</h2>
+              <p>Area (A) = 0.5 X b X h</p>
+              <p>
+              <input type="text" class="bg-gray-200 w-24 text-xl " placeholder="base"> <span class="text-2xl ml-2">cm</span>
+              <input type="text" class="bg-gray-200 w-24 text-xl ml-4" placeholder="height"> <span class="text-2xl ml-2">cm</span>
+            </p> 
+            <p> Area: <span></spa></p>
+              <div class="card-actions">
+                <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Rectangle  card -->
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure><img src="/assets/rectangle.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Rectangle</h2>
+              <p> Area (A) = 0.5 X b X h</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parollogram card -->
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure><img src="/assets/parallelogram.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Parollogram</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- area calculator -->
+        <div class="w-[400px]">
+          <div class="text-4xl">Area Calcutor</div>
+        </div>
+      </div>
+    </main>
+    <script src="/scripts/area.calculator.js"></script>
 </body>
 </html>
